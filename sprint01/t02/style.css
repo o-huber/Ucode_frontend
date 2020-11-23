@@ -1,0 +1,45 @@
+.header{
+    background-color: black;
+    color: white;
+    
+}
+table, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.cellute {
+    text-align: center;
+  
+    
+}
+img{
+    
+    height: 120px;
+    width: 120px;
+    border-radius:20%;
+    
+}
+.soul_stone{
+    background-color: rgb(204	148	77	) ;
+}
+.time_stone{
+    background-color:green;
+}
+.blue_stone{
+    background-color:rgb(36	87	141	);
+}
+.mind_stone {
+    background-color:yellow;
+}
+.reality_stone {
+    background-color: red;
+}
+.power_stone {
+    background-color: rgb(127	118	178	);
+}
+.link{
+    text-align: center;
+    border: 2px solid lightgray;
+
+}

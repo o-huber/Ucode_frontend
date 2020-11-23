@@ -1,0 +1,18 @@
+form{
+    display: flex;
+    
+}
+input{
+    color: green;
+    padding-left:10px;
+    padding-right: 10px;
+    width: 100%;
+}
+button{
+    color: green;
+    padding: 0 10px;
+}
+input:hover, button:hover{
+    color: red;
+}
+
