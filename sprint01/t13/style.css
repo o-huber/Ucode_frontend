@@ -1,0 +1,24 @@
+   body{
+    margin: 30px;
+   }
+   p {
+    text-align: justify;
+  }
+  img {
+    width: 100%;
+  }
+  div {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+  }
+  
+  @media print {
+    img {
+      width: 50%;
+    }
+    div {
+      width: 100%;
+    }
+  }
+  
