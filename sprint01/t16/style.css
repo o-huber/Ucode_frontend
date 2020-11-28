@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background-color: #ffeee6;
+    font-family: Verdana, sans-serif;
+  }
+  h1 {
+    display: block;
+    margin: 0;
+    padding-top: 5px;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: #ff5100;
+    background-color: #331000;
+  }
+  /* --------------------- for all menu */
+  nav {
+    text-align: center;
+    padding: 10px 0 0;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    text-decoration: none;
+    display: block;
+    color: #ff5100;
+  }
+  /* --------------------- for buttons first level */
+  .topmenu > li {
+    display: inline-block;
+    position: relative;
+  }
+  .topmenu > li > a {
+    position: relative;
+    padding: 10px 15px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+    line-height: 1;
+    background-color: #471c08d3;
+  }
+  /* ------------------- white circle */
+  .topmenu > li > a:before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 100%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: .3s;
+  }
+  .topmenu li:hover a:before {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  /* ------------------- 1 level action */
+  .submenu {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 100%;
+    width: 150px;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+  }
+  .topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  /* ------------------- 2 level action */
+  .submenu .subsubmenu {
+    position: absolute;
+    z-index: 3;
+    left: 150%;
+    width: 150px;
+    padding: 15px 0 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+  }
+  .submenu > li:hover > .subsubmenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -30px);
+  }
+  /* ------------------- 1 and 2 levels buttons (view and hover) */
+  .submenu a {
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: .3s linear;
+  }
+  .submenu a:hover {
+    background: #e8e8e8;
+  }
+  
