@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Settings</h1>
+  <form action="/" method="post">
+    <div class="rightmenu">
+      <div class="box-1 typeface">
+        <label class="labelname">Typeface</label>
+      </div>
+      <div class="box-2 select">
+        <select id="typeface">
+          <option>Acunim Pro</option>
+          <option>Comic Sans</option>
+          <option disabled>Times New Roman</option>
+        </select>
+        <label for="typeface"></label>
+      </div>
+      <div class="box-3">
+        <div class="dark">
+          <label class="labelname">Dark UI</label>
+          <div class="ui">
+            <input id="ui" type="checkbox"><label for="ui"></label>
+          </div>
+        </div>
+      </div>
+      <div class="box-4">
+        <label class="labelname">Weight</label>
+        <div class="weight">
+          <input id="regu" type="checkbox" checked><label for="regu"></label>
+          <label>Regular</label>
+          <input id="bold" type="checkbox"><label for="bold"></label>
+          <label>Bold</label>
+        </div>
+      </div>
+      <div class="box-5">
+        <label class="labelname">Color</label>
+        <div class="color">
+          <input id="blue" type="checkbox"><label for="blue" class="blue"></label>
+          <input id="green" type="checkbox" checked><label for="green" class="green"></label>
+          <input id="purple" type="checkbox"><label for="purple" class="purple"></label>
+          <input id="yellow" type="checkbox"><label for="yellow" class="yellow"></label>
+          <input id="orange" type="checkbox" checked><label for="orange" class="orange"></label>
+        </div>
+      </div>
+      <div class="box-6">
+        <label class="labelname">Size</label>
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <div class="aslide">
+          <label>A</label>
+          <label class="bigger">A</label>
+        </div>
+      </div>
+    </div>
+    <div class="leftmenu">
+      <img src="assets/images/artistic-brush.png" alt="artistic-brush">
+      <img src="assets/images/user-icon.png" alt="user-icon">
+      <img src="assets/images/sms-speech-bubble.png" alt="sms-speech-bubble">
+      <img src="assets/images/computer-screen.png" alt="computer-screen">
+    </div>
+  </form>
+</body>
+
+</html>
