@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Portfolio">
+  <meta name="keywords" content="HTML, CSS, ucode">
+  <meta name="author" content="Oleh Hubernator">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"/>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+  <header class="sticky">
+    <ul id="menu" class="shadow">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <div id="lead">
+    <div id="lead-content">
+      <h1>Oleh Hubernator</h1>
+      <h2>Frontend Web Developer</h2>
+      <a class="btn-rounded-white"
+         href="">
+        Download Resume
+      </a>
+    </div>
+    <div id="lead-overlay"></div>
+    <div id="lead-down">
+      <span>
+        <svg focusable="false" width="35" height="35" viewBox = "0 0 35 35" >
+          <path d="M22.782 13.8L17 19.582 11.218 13.8a1 1 0 0 0-1.414 1.414L16.29 21.7a.992.992 0 0 0 .71.292.997.997 0 0 0 .71-.292l6.486-6.486a1 1 0 0 0-1.414-1.414z"/>
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="container">
+      <div>
+        <h2 class="heading">About Me</h2>
+        <div>
+          <p>Oleh Hubernator, 19 years old.</p>
+          <p>Location: Ukraine, Kyiv, Dorohozhytska 3</p>
+          <p>English: intermediate.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="skills">
+    <h2 class="heading">Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Git</li>
+      <li>C++</li>
+      <li>DataBases</li>
+      <li>NumericalAnalysis</li>
+
+      
+    </ul>
+  </div>
+
+  <div id="projects">
+    <h2 class="heading">Projects</h2>
+    <div class="container grid">
+
+      <div class="project shadow-large">
+        <div class="project-image">
+          <img src="assets/images/settings.png" alt="settings_image"/>
+        </div>
+        <div class="project-info">
+          <a href=""
+             target="_blank" >Settings</a>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project shadow-large">
+        <div class="project-image">
+          <img src="assets/images/form.png" alt="form_image"/>
+        </div>
+        <div class="project-info">
+          <a href=""
+             target="_blank">Request Form</a>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project shadow-large">
+        <div class="project-image">
+          <img src="" alt=""/>
+        </div>
+        <div class="project-info">
+          <a href=""
+             target="_blank" ></a>
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+        </div>
+      </div>
+
+    </div>
+    <div id="more-projects" >
+      <a class="tooltip" target="_blank" href="">more projects...</a>
+      <span class="tooltiptext">link on github page</span>
+    </div>
+  </div>
+
+
+  <div id="contact">
+    <div class="flexbox">
+      <div class="box">
+        <h2>Get in Touch</h2>
+        <div class="contact-text">
+          <p>Do not hesitate to contact me, I will gladly answer any of your questions.</p>
+          <br>
+          <p>o.a.huber@gmail.com</p>
+          <p>+380 98 765 5551</p>
+        </div>
+        <div id="social">
+          <ul>
+            <li>Contacts</li>
+            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+        <br>
+      </div>
+      <div id="contact-form" class="box">
+        <form method="POST" action="https://formspree.io/f/mvovwbpk">
+          <input type="hidden" name="_subject" value="Contact request from personal website"/>
+          <input type="text" name="_from" placeholder="Name *" required/>
+          <input type="email" name="_replyto" placeholder="Email *" required/>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container footflexbox">
+      <div class="copyright footbox">
+        <p>Copyright &copy; 2020 Oleh Hubernator</p>
+      </div>
+      <div id="to-top" class="footbox">
+        <span>
+          <svg focusable="false" viewBox="-170 -150 660 660" >
+            <path d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+              l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+              C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+          </svg>
+          
+        </span>
+        <a href="#lead"></a>
+      </div>
+      <div class="social footbox ">
+        
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
