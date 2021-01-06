@@ -1,4 +1,3 @@
-
 let number = 303;
 let bigInt = BigInt(303);
 let str = "name";
